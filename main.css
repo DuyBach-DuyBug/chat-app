@@ -1,0 +1,314 @@
+body,
+body * {
+  font-family: "Chelsea Market", cursive;
+}
+body {
+  background: #f8f8f8;
+}
+.col-25 {
+  width: 25%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-75 {
+  width: 75%;
+}
+.col-100 {
+  width: 100%;
+}
+.fl-left {
+  float: left;
+}
+.d-flex {
+  display: flex;
+}
+h2 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #222;
+  /* font-family: Poppins; */
+  font-size: 36px;
+}
+button {
+  background: #6dabe4;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+  margin: auto;
+}
+.form-group input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.space-style {
+  padding: 10px 40px;
+}
+.account-section {
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.position-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+section {
+  padding: 30px;
+}
+.message-error {
+  position: absolute;
+  z-index: 3;
+  color: red;
+  bottom: -15px;
+  font-size: 10px;
+}
+.message {
+  font-size: 10px;
+  color: blueviolet;
+}
+.text-error {
+  color: red;
+}
+#register_section,
+#login_section {
+  transition-duration: 0.5s;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  /* overflow: hidden; */
+}
+.form-group label {
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  margin: auto;
+}
+.form-group i {
+  pointer-events: none;
+}
+.media_container {
+  text-align: center;
+}
+.media_container img {
+  max-width: 100%;
+}
+.media_container a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.center-column {
+  flex-direction: column;
+  justify-content: center;
+}
+.start-column {
+  flex-direction: column;
+  justify-content: start;
+}
+button:disabled {
+  pointer-events: none;
+  background-color: gray;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.list-chat-room{
+  margin-top: 10px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.list-chat-room input[type=radio]{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.list-chat-room > div{
+  border-radius: 5px;
+  border: 1px solid;
+  margin-right: 5px;
+}
+.list-chat-room .room-selected{
+  padding: 5px;
+  display: block;
+  margin: auto;
+}
+.list-chat-room *{
+  margin: auto auto 5px;
+}
+.list-chat-room input[type=radio]:checked + .room-selected{
+  background-color: grey;
+}
+/* .room-selected{
+  background-color: grey;
+  border-radius: 5px;
+} */
+.chat-section {
+  max-width: 1000px;
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  padding: 20px 10px;
+}
+.chat-section h3 {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
+    0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  font-size: 24px;
+  margin: 5px 0;
+}
+.chat-section label {
+  left: 6px;
+  bottom: 8px;
+}
+.chat-section i {
+  color: black;
+}
+.chat-section > div {
+  padding: 0 10px;
+}
+.chat-section > div:not(:last-child) {
+  border-right: 1px solid;
+}
+.message-content {
+  padding: 2px 0;
+}
+.message-content p {
+  background: rgb(82, 79, 79);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px 0px;
+  max-width: 260px;
+}
+.message-content img {
+  max-width: 25px;
+  margin-right: 5px;
+  max-height: 25px;
+}
+.my-message {
+  justify-content: flex-end;
+}
+.my-message p {
+  background-color: green;
+}
+.messages-box {
+  /* height: 100%; */
+  height: 280px;
+  padding: 5px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.style-scrollbar {
+  background: #151414;
+}
+.style-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.style-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.style-scrollbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+.status-icon {
+  border-radius: 99px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+}
+.user-status > div {
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background: #41509a;
+}
+.user-status > div:nth-child(odd) {
+  background: greenyellow;
+}
+.user-status > div > p {
+  margin: 0 15px 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-status img {
+  width: 50px;
+}
+.user_online {
+  background-color: green;
+}
+.user_offline {
+  background-color: red;
+}
+body {
+  background: linear-gradient(270deg, #246655, #766eb9, #75c351);
+  background-size: 600% 600%;
+
+  -webkit-animation: background-body 30s ease infinite;
+  -moz-animation: background-body 30s ease infinite;
+  animation: background-body 30s ease infinite;
+}
+
+@-webkit-keyframes background-body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes background-body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes background-body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
